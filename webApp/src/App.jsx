@@ -11,33 +11,15 @@ import Accomodations from "./components/Accomodations";
 import Contact from "./components/Contact";
 import Volunteers from "./components/Volunteers";
 import CopainsDuMoulin from "./components/Friends";
+import Header from "./components/Header";
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/accomodations">Accomodations</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link to="/volunteers">Volunteers</Link>
-            </li>
-            <li>  
-              <Link to="/cpm">Copains Du Moulin </Link>
-            </li>
-          </ul>
-        </nav>
+        <Header>
+    
+        </Header>
 
         <Routes>
           <Route path="/" element={<Home />} />
