@@ -15,6 +15,7 @@ import CopainsDuMoulin from "./components/Friends";
 import Header from "./components/Header";
 import Test from "./components/Test";
 import Footer from "./components/Footer";
+import Association from "./components/Association";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/association" element={<Association />} />
           <Route path="/about" element={<About />} />
           <Route path="/accomodations" element={<Accomodations />} />
           <Route path="/contact" element={<Contact />} />
