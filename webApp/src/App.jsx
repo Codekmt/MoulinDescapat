@@ -14,13 +14,13 @@ import Volunteers from "./components/Volunteers";
 import CopainsDuMoulin from "./components/Friends";
 import Header from "./components/Header";
 import Test from "./components/Test";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
-      <div>
         <Header>
-    
+          
         </Header>
         <Test />
 
@@ -34,7 +34,7 @@ function App() {
           {}
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
-      </div>
+        <Footer />
     </Router>
   );
 }

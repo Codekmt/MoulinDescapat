@@ -17,21 +17,24 @@ const Home = () =>
                     <div class="column">
                     <img class="column" src={groupPerforming} alt="groupPerforming" />
                     </div>
-                    <div class="column">
-                    <p className="text-2xl b" >We’re thrilled to have you join our vibrant community of music lovers, performers, and creators.</p>
+                    <div class="column  bg-red-500 p-6 flex items-center justify-center just-another-hand-regular w-1/4">
+                    <p className="text-4xl text-gray-200" >We’re thrilled to have you join our vibrant community of music lovers, performers, and creators.</p>
                     </div>
                     <div class="column">
                     <img className="column"  src={nightLights} alt="nightLights" />
                     </div>
                 </div>  
             </div>
-                <div>
-                    <h1 className="text-4xl font-bold mb-4">Welcome to Moulin d'Escapat</h1>
-                    <p className="text-lg text-gray-700">Your adventure starts here!</p>
-                    <img src="/logo.png" alt="Moulin d'Escapat Logo" className="mt-6 w-32 h-32 rounded-full" />
+            <div className="bg-black just-another-hand-regular">
+                <div className="w-1/2 text-white p-6">
+                    <h1 className="text-4xl  mb-4">Welcome to Moulin d'Escapat</h1>
+                    <p className="text-lg text-gray-300">We’re thrilled to have you join our vibrant community of music lovers, performers, and creators. Whether you’re here to sing, play, compose, or simply enjoy the beauty of music, you’ve found the right place.
+At Moulin d’Escapat, we believe music brings people together, transcending boundaries and creating unforgettable moments. Throughout the year, you'll have the chance to participate in concerts, workshops, jam sessions, and many other musical adventures.
+🎵</p>
+                </div>
                 </div>
         </>
     );
-}
+} 
 
 export default Home;

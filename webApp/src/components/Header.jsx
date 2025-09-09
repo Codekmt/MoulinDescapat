@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Header = () => {
     return (
         <>
-        <header className="bg-red-800 p-4 fixed w-full z-10">
+        <header className="bg-red-800 p-3 fixed w-full z-10">
           <div className="flex space-x-2 items-center">
           <Link class="listItem"><img src="/logo.png" alt="Logo"/></Link>
-        <h1 className="title">Moulin d'Escapat</h1>
+        <h1 class="title">Moulin d'Escapat</h1>
         </div>
         <nav >
           <ul className="flex space-x-2 absolute top-1.5 bottom-1.5 right-15">
