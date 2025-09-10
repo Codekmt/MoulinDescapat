@@ -4,8 +4,8 @@ import grangeDance from '../assets/img/grangeDance.jpg';
 const Accomodations = () => {
     return (
         <div>
-            <img src={grangeDance} alt="accomodations" class="w-full h-64 object-cover"/>
-            <h1>Accomodations Page</h1>
+            <img src={grangeDance} alt="accomodations" className="imgCover"/>
+            <h1 className="imgCoverTitle">Accomodations</h1>
         </div>
     );
 };

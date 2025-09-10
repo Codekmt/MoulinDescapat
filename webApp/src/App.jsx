@@ -6,25 +6,22 @@ import {
   Link
 } from "react-router-dom";
 import './index.css'; 
-import Home from "./components/Home";
-import About from "./components/About";
-import Accomodations from "./components/Accomodations";
-import Contact from "./components/Contact";
-import Volunteers from "./components/Volunteers";
-import CopainsDuMoulin from "./components/Friends";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Accomodations from "./pages/Accomodations";
+import Contact from "./pages/Contact";
+import Volunteers from "./pages/Volunteers";
+import CopainsDuMoulin from "./pages/Friends";
 import Header from "./components/Header";
-import Test from "./components/Test";
 import Footer from "./components/Footer";
-import Association from "./components/Association";
+import Association from "./pages/Association";
 
 function App() {
   return (
     <Router>
-        <Header>
-          
+        <Header>     
         </Header>
-        <Test />
-
+        <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/association" element={<Association />} />
@@ -36,6 +33,7 @@ function App() {
           {}
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
+         </div>
         <Footer />
     </Router>
   );

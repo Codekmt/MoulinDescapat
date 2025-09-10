@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
         <footer>
-            <div className="bg-red-800 p-3 just-another-hand-regular text-center text-yellow-500 border-dashed border-t-1 border-yellow ">
+            <div className="bg-red-800 p-3 just-another-hand-regular text-center text-yellow-500 border-dashed border-t-1 border-yellow mt-50">
                 <h1 className="text-5xl text-left m-2">Follow us</h1>
                 <div className="flex space-x-2 mb-2 m-1">
                     <img src={facebookIcon} alt="facebook" className="w-10 h-10 rounded-full"/>
