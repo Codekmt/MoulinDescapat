@@ -17,11 +17,11 @@ const Home = () =>
                     <div class="column2">
                     <img class="column2" src={groupPerforming} alt="groupPerforming" />
                     </div>
-                    <div class="column2  bg-red-500 p-6 flex items-center justify-center just-another-hand-regular w-1/4">
+                    <div class="column2  bg-red-800 p-6 flex items-center justify-center just-another-hand-regular w-1/4">
                     <p className="text-4xl text-gray-200" >We’re thrilled to have you join our vibrant community of music lovers, performers, and creators.</p>
                     </div>
                     <div class="column2">
-                    <img className="column2"  src={nightLights} alt="nightLights" />
+                    <img className="column2 object-cover"  src={nightLights} alt="nightLights" />
                     </div>
                 </div>  
             </div>

@@ -1,5 +1,12 @@
 import React from 'react';
+import ImgWrapper from '../components/ImgWrapper';
 
-const Volunteers = () => <h1>Volunteers Page</h1>;
+const Volunteers = () => {
+    return (
+        <div>
+            <ImgWrapper alt="VolunteersPhoto" title="Volunteers" />
+        </div>
+    );
+}
 
 export default Volunteers;

@@ -1,11 +1,12 @@
 import React from 'react';
+import ImgWrapper from '../components/ImgWrapper';
 import grangeDance from '../assets/img/grangeDance.jpg';
 
 const Accomodations = () => {
     return (
         <div>
-            <img src={grangeDance} alt="accomodations" className="imgCover"/>
-            <h1 className="imgCoverTitle">Accomodations</h1>
+            <ImgWrapper src={grangeDance} alt="AccomodationsPhoto" title="Accomodations" />
+            
         </div>
     );
 };
