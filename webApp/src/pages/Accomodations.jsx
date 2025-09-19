@@ -6,9 +6,8 @@ import AccomodationsCard from '../components/AccomodationsCard';
 const Accomodations = () => {
     return (
         <div>
-            <div className="imgWrapperContainer">
+            
             <ImgWrapper src={grangeDance} alt="AccomodationsPhoto" title="Accomodations" />
-            </div>
             <div className="accomodationsCardsContainer">
             <AccomodationsCard
                 title="Chambres d'hôtes"

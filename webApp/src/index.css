@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 
-.listItem {
+.navbarLink {
   @apply text-black hover:text-red-500 transition-colors duration-300 rounded-full border-black border-1 p-1;
 }
 
