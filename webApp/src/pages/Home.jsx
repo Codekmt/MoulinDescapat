@@ -8,7 +8,7 @@ const Home = () =>
 {
     return (
         <>
-            <div>
+            <div class="hidden md:flex flex-col">
                 <div class="firstRow row ">
                     <img class="object-fill column"  src={grangeDance} alt="grangeDance"/>
                     <img class="column" src={gardenMoulin} alt="gardenMoulin" />
@@ -25,8 +25,11 @@ const Home = () =>
                     </div>
                 </div>  
             </div>
+             <div className='md:hidden flex justify-center items-center'>
+                    <img className='w-full h-100  object-cover' src={grangeDance} alt="grangeDance"/>
+                </div>
             <div className="bg-black just-another-hand-regular">
-                <div className="w-1/3 text-white p-6">
+                <div className="sm:justify-center w-1/2 text-white p-6">
                     <h1 className="text-4xl  mb-4">Welcome to Moulin d'Escapat</h1>
                     <p className="text-lg text-gray-300">We’re thrilled to have you join our vibrant community of music lovers, performers, and creators. Whether you’re here to sing, play, compose, or simply enjoy the beauty of music, you’ve found the right place.
 At Moulin d’Escapat, we believe music brings people together, transcending boundaries and creating unforgettable moments. Throughout the year, you'll have the chance to participate in concerts, workshops, jam sessions, and many other musical adventures.So tune your instruments, warm up those vocal cords, and get ready to make some noise — together, let’s create harmony that resonates far beyond the stage!

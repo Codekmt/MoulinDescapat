@@ -2,7 +2,7 @@
 
 
 .navbarLink {
-  @apply text-black hover:text-red-500 transition-colors duration-300 rounded-full border-black border-1 p-1;
+  @apply text-yellow-400 hover:text-yellow-200 transition-colors duration-300 rounded-full border-yellow-400 border-1 p-1;
 }
 
 .just-me-again-down-here-regular {
@@ -131,4 +131,8 @@ footer {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
+}
+
+.hiddenNavbarLink {
+  @apply hover:text-yellow-300 transition-colors duration-300 border-b-1;
 }

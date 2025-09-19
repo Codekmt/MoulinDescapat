@@ -13,7 +13,7 @@ const Header = () => {
           <Link to="/" class="navbarLink"><img src="/logo.png" alt="Logo"/></Link>
          <Link to="/"><h1 class="title">Moulin d'Escapat</h1></Link>
         </nav>
-        <nav className="hidden sm:flex justify-between items-center gap-4 font-semibold">
+        <nav className="hidden md:flex justify-between items-center gap-4 font-semibold">
           <ul className="flex space-x-2 absolute top-1.5 bottom-1.5 right-15">
             <li class="navbarLink">
               <Link to="/association">
@@ -47,47 +47,49 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-            <nav className="sm:hidden items-end gap-1 font-semibold">
+            <nav className="md:hidden items-end gap-1 font-semibold">
               <button
                 onClick={() => setShowMenu(!showMenu)}
-                className="sm:hidden font-bold text-xl hover:text-gray-500"
+                className="md:hidden font-bold text-xl hover:text-gray-500"
               >
                 {showMenu ? <GrClose /> : <GiHamburgerMenu />}
               </button>
               {showMenu && (
           <>
+          <div className="absolute top-12 right-3 bg-red-800 border-spacing- border-dashed border-1 border-yellow just-another-hand-regular text-yellow-500 p-3 rounded-lg">
             <ul className="">
-            <li class="">
-              <Link to="/association">
-              asso
+            <li class="hiddenNavbarLink">
+              <Link to="/association" onClick={() => setShowMenu(false)}>
+              Asso
               </Link>
             </li>
-            <li class=''>
-              <Link to="/about">
-              vision
+            <li class='hiddenNavbarLink'>
+              <Link to="/about" onClick={() => setShowMenu(false)}>
+              Vision
               </Link>
             </li>
-            <li class=''>
-              <Link to="/accomodations">
-              accomodations 
+            <li class='hiddenNavbarLink'>
+              <Link to="/accomodations" onClick={() => setShowMenu(false)}>
+              Accomodations 
               </Link>
             </li>
-            <li class=''>
-              <Link to="/contact">
-              contact
+            <li class='hiddenNavbarLink'>
+              <Link to="/contact" onClick={() => setShowMenu(false)}>
+              Contact
               </Link>
             </li>
-            <li class=''>
-              <Link to="/volunteers">
-              volunteers
+            <li class='hiddenNavbarLink'>
+              <Link to="/volunteers" onClick={() => setShowMenu(false)}>
+              Volunteers
               </Link>
             </li>
-            <li class=''>  
-              <Link to="/cpm">
-              copains du moulin
+            <li class='hiddenNavbarLink'>  
+              <Link to="/cpm" onClick={() => setShowMenu(false)}>
+              Copains du Moulin
               </Link>
             </li>
           </ul>
+          </div>
           </>
         )}
         </nav>
