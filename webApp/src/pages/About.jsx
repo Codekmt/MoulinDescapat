@@ -1,10 +1,11 @@
 import React from 'react';
 import ImgWrapper from '../components/ImgWrapper';
+import visionPhoto from '../assets/img/vision.jpg';
 
 const About = () => {
     return (
         <div>
-            <ImgWrapper alt="AboutPhoto" title="About Us" />
+            <ImgWrapper src={visionPhoto} alt="AboutPhoto" title="Vision" />
         </div>
     );
 };

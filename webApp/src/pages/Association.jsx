@@ -1,11 +1,11 @@
 import React from "react";
 import ImgWrapper from '../components/ImgWrapper';
-import grangeDance from '../assets/img/grangeDance.jpg';
+import partyTentGarden from '../assets/img/partyTentGarden.jpg';
 
 const Association = () => {
     return (
         <div>
-            <ImgWrapper src={grangeDance} alt="AssociationPhoto" title="Association" />
+            <ImgWrapper src={partyTentGarden} alt="AssociationPhoto" title="Association" />
         </div>
     );
 };
