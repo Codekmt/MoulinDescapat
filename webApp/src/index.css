@@ -34,7 +34,7 @@ body {
 
 
 .title {
-    @apply text-5xl font-bold text-yellow-500;
+    @apply text-3xl font-bold text-yellow-500;
     font-family: "Just Me Again Down Here", cursive;
     font-weight: 400;
 }

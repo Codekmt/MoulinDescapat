@@ -2,9 +2,9 @@ import react from 'react';
 
 export default function MoulinDescription() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-12 text-center text-gray-800 leading-relaxed">
+    <section className="max-w-3xl mx-auto px-6 py-12 text-center text-gray-300 leading-relaxed">
       <h1 className="text-3xl font-bold mb-6">
-        🌿 Bienvenue au <span className="text-green-700">Moulin d’Escapat</span>
+        🌿 Bienvenue au Moulin d’Escapat
       </h1>
 
       <p className="mb-6">
@@ -13,7 +13,7 @@ export default function MoulinDescription() {
         se reconnecter à l’essentiel.
       </p>
 
-      <p className="italic text-gray-600 mb-8">
+      <p className="italic text-gray-400 mb-8">
         🌳 Ici, nous croyons que la terre nous guide.<br />
         🎶 Que le silence révèle notre vérité.<br />
         🕊 Et que chaque être porte une note unique à accorder.
@@ -55,7 +55,7 @@ export default function MoulinDescription() {
         Et peut repartir plus alignée, plus libre… ou simplement plus apaisée.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-4">🕯 Vous êtes bienvenu·e</h2>
+      <h2 className="text-2xl font-semibold mb-4">🕯 Vous êtes bienvenue</h2>
 
       <p>
         Que vous veniez pour vous reposer, pour créer, pour vous réinventer, pour guérir ou pour offrir,<br />

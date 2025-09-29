@@ -8,7 +8,7 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-        <header className="bg-red-800 p-3 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
+        <header className="bg-red-800 p-6 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
           <nav className="flex space-x-2 items-center">
           <Link to="/" class="navbarLink"><img src="/logo.png" alt="Logo"/></Link>
          <Link to="/"><h1 class="title">Moulin d'Escapat</h1></Link>
@@ -18,31 +18,37 @@ const Header = () => {
             <li class="navbarLink">
               <Link to="/association">
               <img title="home" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <span>Home</span>
               </Link>
             </li>
             <li class='navbarLink'>
               <Link to="/about">
               <img title="aboutUs" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <span>Vision</span>
               </Link>
             </li>
             <li class='navbarLink'>
               <Link to="/accomodations">
               <img title="accomodations" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <span>Accomodations</span>
               </Link>
             </li>
             <li class='navbarLink'>
               <Link to="/contact">
               <img title="contact" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <span>Contact Us</span>
               </Link>
             </li>
             <li class='navbarLink'>
               <Link to="/volunteers">
-              <img title="volunteers" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <img title="volunteers" src="/logo.png" alt="Logo" className="max-w-10 h-10" />
+              <span>Volunteers</span>
               </Link>
             </li>
             <li class='navbarLink'>  
               <Link to="/cpm">
               <img title="copainsDuMoulin" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <span>Copains du Moulin</span>
               </Link>
             </li>
           </ul>

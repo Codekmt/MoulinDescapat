@@ -5,6 +5,7 @@ import nightLights from '../assets/img/ambianceOutside.jpg';
 import grangeGarden from '../assets/img/grangeGarden.jpg';
 import sunsetWater from '../assets/img/sunsetWater.jpg';
 import MoulinDescription from '../components/MoulinDescription';
+import franceMap from '../assets/img/franceMap.png';
 
 const Home = () => 
 {
@@ -30,9 +31,16 @@ const Home = () =>
              <div className='md:hidden flex justify-center items-center'>
                     <img className='w-full h-100  object-cover' src={grangeDance} alt="grangeDance"/>
                 </div>
-            <div className="bg-black just-another-hand-regular">
-                <div className="sm:justify-center w-1/2 text-white p-6">
+            <div className="bg-black just-another-hand-regular flex flex-col md:flex-row  items-center md:items-start md:justify-center space-y-6 md:space-y-0 md:space-x-6 py-12 px-4 md:px-8">
+                <div className="sm:justify-center w-3/4 md:w-1/2 flex  text-white p-6">
                     <MoulinDescription></MoulinDescription>
+                </div>
+                <div className="hidden md:flex md:w-1/3">
+                <div className="flex flex-col mt-35">
+                    <img className="flex w-full h-full object-cover" src={franceMap} alt="grangeDance" />
+                        <h2 className='mt-0'>Le moulin est situé dans le gers</h2>
+                        <p></p>
+                    </div>
                 </div>
                 </div>
         </>
