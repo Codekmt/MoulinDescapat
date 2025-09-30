@@ -3,67 +3,68 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
+import visionLogo from '../assets/img/visionLogo.png';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-        <header className="bg-red-800 p-6 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
-          <nav className="flex space-x-2 items-center">
-          <Link to="/" class="navbarLink"><img src="/logo.png" alt="Logo"/></Link>
+        <header class="bg-red-800 p-3.5 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
+          <nav class="flex space-x-2 items-center">
+          <Link to="/" class="navbarLogo"><img src="/logo.png" alt="Logo"/></Link>
          <Link to="/"><h1 class="title">Moulin d'Escapat</h1></Link>
         </nav>
-        <nav className="hidden md:flex justify-between items-center gap-4 font-semibold">
-          <ul className="flex space-x-2 absolute top-1.5 bottom-1.5 right-15">
+        <nav class="hidden md:flex">
+          <ul class="flex flex-row space-x-5 items-center justify-between">
             <li class="navbarLink">
               <Link to="/association">
-              <img title="home" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
-              <span>Home</span>
+              <img title="home" src="/logo.png" alt="Logo" class="navbarLogo w-10 h-10 rounded-full" />
+              <span class="navbarLinkName">Home</span>
               </Link>
             </li>
             <li class='navbarLink'>
               <Link to="/about">
-              <img title="aboutUs" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
-              <span>Vision</span>
+              <img title="vision" src={visionLogo} alt="visionLogo" class="navbarLogo w-10 h-10 rounded-full flex justify-between items-center" />
+              <span class="navbarLinkName">Vision</span>
               </Link>
             </li>
             <li class='navbarLink'>
               <Link to="/accomodations">
-              <img title="accomodations" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <img title="accomodations" src="/logo.png" alt="accoLogo" class="navbarLogo w-10 h-10" />
               <span>Accomodations</span>
               </Link>
             </li>
             <li class='navbarLink'>
               <Link to="/contact">
-              <img title="contact" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <img title="contact" src="/logo.png" alt="contactLogo" class="navbarLogo w-10 h-10 rounded-full" />
               <span>Contact Us</span>
               </Link>
             </li>
             <li class='navbarLink'>
               <Link to="/volunteers">
-              <img title="volunteers" src="/logo.png" alt="Logo" className="max-w-10 h-10" />
+              <img title="volunteers" src="/logo.png" alt="volunteersLogo" class="navbarLogo w-10 h-10 rounded-full" />
               <span>Volunteers</span>
               </Link>
             </li>
             <li class='navbarLink'>  
               <Link to="/cpm">
-              <img title="copainsDuMoulin" src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full" />
+              <img title="copainsDuMoulin" src="/logo.png" alt="cdmLogo" class="navbarLogo w-10 h-10 rounded-full" />
               <span>Copains du Moulin</span>
               </Link>
             </li>
           </ul>
         </nav>
-            <nav className="md:hidden items-end gap-1 font-semibold">
+            <nav class="md:hidden items-end gap-1 font-semibold">
               <button
                 onClick={() => setShowMenu(!showMenu)}
-                className="md:hidden font-bold text-xl hover:text-gray-500"
+                class="md:hidden font-bold text-xl hover:text-gray-500"
               >
                 {showMenu ? <GrClose /> : <GiHamburgerMenu />}
               </button>
               {showMenu && (
           <>
-          <div className="absolute top-12 right-3 bg-red-800 border-spacing- border-dashed border-1 border-yellow just-another-hand-regular text-yellow-500 p-3 rounded-lg">
-            <ul className="">
+          <div class="absolute top-12 right-3 bg-red-800 border-spacing- border-dashed border-1 border-yellow just-another-hand-regular text-yellow-500 p-3 rounded-lg">
+            <ul class="">
             <li class="hiddenNavbarLink">
               <Link to="/association" onClick={() => setShowMenu(false)}>
               Asso

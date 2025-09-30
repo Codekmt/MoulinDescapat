@@ -2,7 +2,16 @@
 
 
 .navbarLink {
-  @apply text-yellow-400 hover:text-yellow-200 transition-colors duration-300 rounded-full border-yellow-400 border-1 p-1;
+  @apply text-yellow-400 hover:text-yellow-200 transition-colors duration-300 flex items-center; 
+  text-align: center;
+}
+
+.navbarLogo {
+  @apply border-2 border-yellow-400 rounded-full p-1 hover:border-yellow-200 transition-colors duration-300;
+}
+
+.navbarLinkName {
+  @apply border-r-2 pr-2  border-yellow-400;
 }
 
 .just-me-again-down-here-regular {
