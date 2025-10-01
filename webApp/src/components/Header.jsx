@@ -9,23 +9,23 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-        <header class="bg-red-800 p-3.5 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
+        <header class="bg-red-800 p-0.5 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
           <nav class="flex space-x-2 items-center">
           <Link to="/" class="navbarLogo"><img src="/logo.png" alt="Logo"/></Link>
          <Link to="/"><h1 class="title">Moulin d'Escapat</h1></Link>
         </nav>
         <nav class="hidden md:flex">
           <ul class="flex flex-row space-x-5 items-center justify-between">
-            <li class="navbarLink">
-              <Link to="/association">
-              <img title="home" src="/logo.png" alt="Logo" class="navbarLogo w-10 h-10 rounded-full" />
-              <span class="navbarLinkName">Home</span>
-              </Link>
-            </li>
             <li class='navbarLink'>
               <Link to="/about">
               <img title="vision" src={visionLogo} alt="visionLogo" class="navbarLogo w-10 h-10 rounded-full flex justify-between items-center" />
               <span class="navbarLinkName">Vision</span>
+              </Link>
+            </li>
+            <li class="navbarLink">
+              <Link to="/association">
+              <img title="Asso" src="/logo.png" alt="Logo" class="navbarLogo w-10 h-10 rounded-full" />
+              <span class="navbarLinkName">Asso</span>
               </Link>
             </li>
             <li class='navbarLink'>
