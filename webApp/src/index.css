@@ -14,6 +14,12 @@
   @apply border-r-2 pr-2  border-yellow-400;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  @apply m-0 p-0;
+  font-family: Pompiere, sans-serif;
+  font-weight: 800;
+}
+
 .just-me-again-down-here-regular {
   font-family: "Just Me Again Down Here", cursive;
   font-weight: 400;
@@ -57,7 +63,6 @@ body {
 }
 
 .column {
-  margin-top: vw;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -125,12 +130,10 @@ footer {
 }
 
 .accomodationsCard {
-  border: 1px solid rgb(225, 255, 1);
-  border-radius: 8px;
   padding: 16px;
   margin: 16px;
-  background-color: #f9f9f9;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   display: flex;
   flex-direction: column;
 }
@@ -140,6 +143,8 @@ footer {
   display: flex;
   flex-direction: row;
 }
+
+
 
 p {
   @apply text-lg mb-4;
