@@ -12,7 +12,7 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-        <header class="bg-red-800 p-0.5 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
+        <header className="bg-red-800 p-3 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
           <nav class="flex space-x-2 items-center">
           <Link to="/" class="navbarLogo"><img src="/logo.png" alt="Logo"/></Link>
          <Link to="/"><h1 class="navbarTitle">Moulin d'Escapat</h1></Link>

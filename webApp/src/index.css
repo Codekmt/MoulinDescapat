@@ -16,7 +16,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   @apply m-0 p-0;
-  font-family: Pompiere, sans-serif;
+  font-family: "Pompiere", sans-serif;
   font-weight: 800;
 }
 
@@ -39,12 +39,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  @apply m-0 p-0 box-border;
-  font-family: "Just Another Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
-  background: #000;
-  color: #fff;
+  background-color: rgb(252, 255, 240);
+}
+
+.container {
+  background-color: rgb(252, 255, 240);
+  height: 100%;
+  min-height: 404px;
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
 }
 
 
@@ -89,16 +94,9 @@ body {
   object-fit: cover;
 }
 
-.container {
-  height: calc(100% - 62px);
-  min-height: 404px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-}
-
 footer {
   position: relative;
+  top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -108,9 +106,7 @@ footer {
 .imgWrapperContainer {
   position: relative;
   text-align: center;
-  color: white;
   margin-bottom: 20px;
-  color: white;
   font-size: 4rem;
   font-weight: bold;
   font-family: "Pompiere", cursive;
@@ -143,8 +139,6 @@ footer {
   display: flex;
   flex-direction: row;
 }
-
-
 
 p {
   @apply text-lg mb-4;

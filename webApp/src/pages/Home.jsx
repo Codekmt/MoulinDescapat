@@ -11,7 +11,7 @@ const Home = () =>
 {
     return (
         <>
-            <div class="hidden md:flex flex-col">
+            <section class="hidden md:flex flex-col">
                 <div class="firstRow row ">
                     <img class="object-fill column"  src={grangeDance} alt="grangeDance"/>
                     <img class="column" src={grangeGarden} alt="gardenMoulin" />
@@ -20,21 +20,21 @@ const Home = () =>
                     <div class="column2">
                     <img class="column2" src={sunsetWater} alt="groupPerforming" />
                     </div>
-                    <div class="column2  bg-red-800 p-6 flex items-center justify-center just-another-hand-regular w-1/4">
+                    <article class="column2  bg-red-800 p-6 flex items-center justify-center just-another-hand-regular w-1/4">
                     <p className="text-4xl text-gray-200" >We’re thrilled to have you join our vibrant community of music lovers, performers, and creators.</p>
-                    </div>
+                    </article>
                     <div class="column2">
                     <img className="column2 object-cover"  src={nightLights} alt="nightLights" />
                     </div>
                 </div>  
-            </div>
+            </section>
              <div className='md:hidden flex justify-center items-center'>
                     <img className='w-full h-100  object-cover' src={grangeDance} alt="grangeDance"/>
                 </div>
-            <div className="bg-black just-another-hand-regular flex flex-col md:flex-row  items-center md:items-start md:justify-center space-y-6 md:space-y-0 md:space-x-6 py-12 px-4 md:px-8">
-                <div className="sm:justify-center w-3/4 md:w-1/2 flex  text-white p-6">
+            <div className= " just-another-hand-regular flex flex-col md:flex-row  items-center md:items-start md:justify-center space-y-6 md:space-y-0 md:space-x-6 py-12 px-4 md:px-8">
+                <article className="sm:justify-center w-3/4 md:w-1/2 flex p-6">
                     <MoulinDescription></MoulinDescription>
-                </div>
+                </article>
                 <div className="hidden md:flex md:w-1/3">
                 <div className="flex flex-col mt-35">
                     <img className="flex w-full h-full object-cover" src={franceMap} alt="grangeDance" />

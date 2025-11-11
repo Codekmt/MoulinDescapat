@@ -2,10 +2,11 @@ import react from 'react';
 
 export default function MoulinDescription() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-12 text-center text-gray-300 leading-relaxed">
-      <h1 className="text-3xl font-bold mb-6">
-        🌿 Bienvenue au Moulin d’Escapat
+    <section className="max-w-3xl leading-relaxed">
+      <h1 className="text-5xl font-bold mb-6">
+        Bienvenue au Moulin d’Escapat
       </h1>
+      <br />
 
       <p className="mb-6">
         Niché au cœur des collines du Gers, en pleine nature, le Moulin d’Escapat est un lieu de ressourcement,
@@ -14,12 +15,12 @@ export default function MoulinDescription() {
       </p>
 
       <p className="italic text-gray-400 mb-8">
-        🌳 Ici, nous croyons que la terre nous guide.<br />
-        🎶 Que le silence révèle notre vérité.<br />
-        🕊 Et que chaque être porte une note unique à accorder.
+         Ici, nous croyons que la terre nous guide.<br />
+         Que le silence révèle notre vérité.<br />
+         Et que chaque être porte une note unique à accorder.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-4">✨ Un lieu pour tous les chemins de vie</h2>
+      <h2 className="text-2xl font-semibold mb-4"> Un lieu pour tous les chemins de vie</h2>
 
       <p className="mb-6">
         Que vous soyez en quête de sens, en transition, artiste, thérapeute, voyageur·se de l’âme ou simplement
@@ -33,7 +34,7 @@ export default function MoulinDescription() {
         ou co-créer avec nous sur plus long terme.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-4">🌟 Ce que vous pouvez vivre ici</h2>
+      <h2 className="text-2xl font-semibold mb-4">Ce que vous pouvez vivre ici</h2>
 
       <ul className="mb-8 space-y-2 text-left mx-auto max-w-md">
         <li>• <em>Des séjours en autonomie</em> ou en accompagnement</li>
@@ -43,7 +44,7 @@ export default function MoulinDescription() {
         <li>• <em>Des rencontres avec des artistes, des porteurs de savoirs ancestraux et des tisseurs de lien</em></li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mb-4">🌀 Une vision en mouvement</h2>
+      <h2 className="text-2xl font-semibold mb-4"> Une vision en mouvement</h2>
 
       <p className="mb-8">
         Le Moulin n’est pas figé. C’est un lieu vivant, un espace d’expérimentation humaine, porté par le souhait
