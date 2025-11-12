@@ -6,21 +6,28 @@ const About = () => {
     return (
         <div>
             <ImgWrapper src={visionPhoto} alt="AboutPhoto" title="Vision" />
-            <div class="container p-20">
-                <div class="content flex">
+            <div class="p-20">
+                <section class="content flex">
                     <img src={visionPhoto} alt="Vision" class="hidden md:block w-80 h-80 object-cover rounded-2xl mr-15"/>
                     <div>
                     <h1 class="text-5xl flex justify-between items center">Our Vision</h1>
+                    <br />
+                    <article>
                     <p>At Moulin d'Escapat, we envision a world where music and community come together to create unforgettable experiences. Our mission is to provide a welcoming space for artists and audiences alike, fostering creativity, connection, and joy through the power of live performance.</p>
+                    </article>
                     </div>
-                </div> 
-                <div class="content flex">
+                </section> 
+                <br />
+                <section class="content flex  mt-10">
                     <div>
-                    <h1 class="text-5xl flex justify-between items center">Our Vision</h1>
+                    <h1 class="text-5xl flex justify-between items center ">Our Vision</h1>
+                    <br />
+                    <article>
                     <p>At Moulin d'Escapat, we envision a world where music and community come together to create unforgettable experiences. Our mission is to provide a welcoming space for artists and audiences alike, fostering creativity, connection, and joy through the power of live performance.</p>
+                    </article>
                     </div>
                     <img src={visionPhoto} alt="Vision" class="hidden md:block w-80 h-80 object-cover rounded-2xl ml-15"/>
-                </div>   
+                </section>   
             </div>
 
         </div>

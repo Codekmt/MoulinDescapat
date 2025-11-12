@@ -8,7 +8,7 @@ import {
 import './index.css'; 
 import Home from "./pages/Home";
 import About from "./pages/Vision";
-import Accomodations from "./pages/Accomodations";
+import Accommodations from "./pages/Accommodations";
 import Contact from "./pages/Contact";
 import Volunteers from "./pages/Volunteers";
 import CopainsDuMoulin from "./pages/Friends";
@@ -26,7 +26,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/association" element={<Association />} />
           <Route path="/about" element={<About />} />
-          <Route path="/accomodations" element={<Accomodations />} />
+          <Route path="/accomodations" element={<Accommodations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/volunteers" element={<Volunteers />} />
           <Route path="/cpm" element={<CopainsDuMoulin />} />

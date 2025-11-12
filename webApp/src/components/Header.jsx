@@ -6,61 +6,78 @@ import { GrClose } from "react-icons/gr";
 import visionLogo from '../assets/img/visionLogo.png';
 import assoLogo from '../assets/img/assoLogo.png';
 import cdmLogo from '../assets/img/cdmLogo.png';
-import volunteersLogo from '../assets/img/volunteersLogo.png'
+import volunteersLogo from '../assets/img/volunteersLogo.png';
+import accommodationsLogo from '../assets/img/accommodationsLogo.png';
+import contactUsLogo from '../assets/img/contactUsLogo.png'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
     return (
         <>
         <header className="bg-red-800 p-3 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
-          <nav class="flex space-x-2 items-center">
+          <nav class="flex space-x-2 items-center text-center">
           <Link to="/" class="navbarLogo"><img src="/logo.png" alt="Logo"/></Link>
          <Link to="/"><h1 class="navbarTitle">Moulin d'Escapat</h1></Link>
         </nav>
-        <nav class="hidden md:flex">
-          <ul class="flex flex-row space-x-5 items-center justify-between">
-            <li class='navbarLink'>
-              <Link to="/about">
-              <img title="vision" src={visionLogo} alt="visionLogo" class="navbarLogo w-10 h-10 rounded-full flex justify-between items-center" />
-              <span class="navbarLinkName">Vision</span>
-              </Link>
-            </li>
-            <li class="navbarLink">
-              <Link to="/association">
-              <img title="Asso" src={assoLogo} alt="Logo" class="navbarLogo w-10 h-10 rounded-full" />
-              <span class="navbarLinkName">Asso</span>
-              </Link>
-            </li>
-            <li class='navbarLink'>
-              <Link to="/accomodations">
-              <img title="accomodations" src="accomodationsLogo" alt="accoLogo" class="navbarLogo w-10 h-10" />
-              <span>Accomodations</span>
-              </Link>
-            </li>
-            <li class='navbarLink'>
-              <Link to="/contact">
-              <img title="contact" src="/logo.png" alt="contactLogo" class="navbarLogo w-10 h-10 rounded-full" />
-              <span>Contact Us</span>
-              </Link>
-            </li>
-            <li class='navbarLink'>
-              <Link to="/volunteers">
-              <img title="volunteers" src={volunteersLogo} alt="volunteersLogo" class="navbarLogo w-10 h-10 rounded-full" />
-              <span>Volunteers</span>
-              </Link>
-            </li>
-            <li class='navbarLink'>  
-              <Link to="/cpm">
-              <img title="copainsDuMoulin" src={cdmLogo} alt="cdmLogo" class="navbarLogo w-10 h-10 rounded-full" />
-              <span>Copains du Moulin</span>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-            <nav class="md:hidden items-end gap-1 font-semibold">
+        <nav class="hidden min-[900px]:flex">
+  <ul class="flex flex-row items-center justify-center">
+    <li class="navbarLink flex flex-col items-center text-center px-4">
+      <Link to="/about" class="flex flex-col items-center">
+        <img src={visionLogo} alt="visionLogo" class="navbarLogo w-10 h-10 rounded-full mb-1" />
+        <span>Vision</span>
+      </Link>
+    </li>
+
+    <div class="navbarDivider"></div>
+
+    <li class="navbarLink flex flex-col items-center text-center px-4">
+      <Link to="/association" class="flex flex-col items-center">
+        <img src={assoLogo} alt="assoLogo" class="navbarLogo w-10 h-10 rounded-full mb-1" />
+        <span>Asso</span>
+      </Link>
+    </li>
+
+    <div class="navbarDivider"></div>
+
+    <li class="navbarLink flex flex-col items-center text-center px-4">
+      <Link to="/accomodations" class="flex flex-col items-center">
+        <img src={accommodationsLogo} alt="accoLogo" class="navbarLogo w-10 h-10 mb-1" />
+        <span>Accomodations</span>
+      </Link>
+    </li>
+
+    <div class="navbarDivider"></div>
+
+    <li class="navbarLink flex flex-col items-center text-center px-4">
+      <Link to="/volunteers" class="flex flex-col items-center">
+        <img src={volunteersLogo} alt="volunteersLogo" class="navbarLogo w-10 h-10 rounded-full mb-1" />
+        <span>Volunteers</span>
+      </Link>
+    </li>
+
+    <div class="navbarDivider"></div>
+
+    <li class="navbarLink flex flex-col items-center text-center px-4">
+      <Link to="/cpm" class="flex flex-col items-center">
+        <img src={cdmLogo} alt="cdmLogo" class="navbarLogo w-10 h-10 rounded-full mb-1" />
+        <span>Copains du Moulin</span>
+      </Link>
+      </li>
+      <div class="navbarDivider"></div>
+      <li class="navbarLink flex flex-col items-center text-center px-4">
+      <Link to="/contact" class="flex flex-col items-center">
+        <img src={contactUsLogo} alt="contactLogo" class="navbarLogo w-10 h-10 rounded-full mb-1" />
+        <span>Contact Us</span>
+      </Link>
+    
+    </li>
+  </ul>
+</nav>
+
+            <nav class="flex max-[899px]:flex min-[900px]:hidden items-end gap-1 font-semibold">
               <button
                 onClick={() => setShowMenu(!showMenu)}
-                class="md:hidden font-bold text-xl hover:text-gray-500"
+                class="flex max-[899px]:flex min-[900px]:hidden font-bold text-xl hover:text-gray-500"
               >
                 {showMenu ? <GrClose /> : <GiHamburgerMenu />}
               </button>
@@ -80,7 +97,7 @@ const Header = () => {
             </li>
             <li class='hiddenNavbarLink'>
               <Link to="/accomodations" onClick={() => setShowMenu(false)}>
-              Accomodations 
+              Accommodations 
               </Link>
             </li>
             <li class='hiddenNavbarLink'>

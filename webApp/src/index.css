@@ -10,13 +10,10 @@
   @apply border-2 border-yellow-400 rounded-full p-1 hover:border-yellow-200 transition-colors duration-300;
 }
 
-.navbarLinkName {
-  @apply border-r-2 pr-2  border-yellow-400;
-}
 
 h1, h2, h3, h4, h5, h6 {
   @apply m-0 p-0;
-  font-family: "Pompiere", sans-serif;
+  font-family: "Pompiere", cursive;
   font-weight: 800;
 }
 
@@ -39,11 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: rgb(252, 255, 240);
+  background-color: rgb(253, 255, 247);
 }
 
 .container {
-  background-color: rgb(252, 255, 240);
+  background-color: rgb(253, 255, 247);
   height: 100%;
   min-height: 404px;
   width: 100%;
@@ -121,11 +118,11 @@ footer {
 
 .imgCoverTitle {
    width: fit-content;
-   border-bottom: #fff solid 1px;
+   border-bottom: #000000 solid 1px;
    margin: auto;
 }
 
-.accomodationsCard {
+.accommodationsCard {
   padding: 16px;
   margin: 16px;
   background-color: #000;
@@ -134,17 +131,31 @@ footer {
   flex-direction: column;
 }
 
-.accomodationsCardsContainer {
+.accommodationsCardsContainer {
   margin-top: 20px;
   display: flex;
   flex-direction: row;
 }
 
-p {
+ul {
   @apply text-lg mb-4;
-  font-family: "cursive";
+  font-family: "Pompiere", "cursive";
   font-weight: 400;
+
 }
+
+p {
+  font-family: "Pompiere", "cursive";
+  font-weight: 500;
+}
+
+.navbarDivider {
+  height: 15px; 
+  border-right: 2px solid rgba(234, 179, 8, 0.6); 
+  margin: 0;
+  align-self: flex-end center;
+}
+
 
 .textTitle {
   @apply text-4xl font-bold text-white mb-4 border-b-2;
