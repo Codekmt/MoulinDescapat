@@ -14,21 +14,8 @@ const Accommodations = () => {
 
             </div>
             <div className="accommodationsCardsContainer">
-            <AccommodationsCard
-                title="Chambres d'hôtes"
-                description="A beautiful place to stay."
-                imgSrc={vision}
-            />
-            <AccommodationsCard
-                title="Jardin Du Moulin"
-                description="Comfortable and cozy."
-                imgSrc={vision}
-            />
-            <AccommodationsCard
-                title="Caravans du Moulin"
-                description="Experience the countryside."
-                imgSrc={vision}
-            />
+           
+            <AccommodationsCard />
             </div>
 
         </div>

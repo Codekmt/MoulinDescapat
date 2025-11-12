@@ -6,6 +6,7 @@ import grangeGarden from '../assets/img/grangeGarden.jpg';
 import sunsetWater from '../assets/img/sunsetWater.jpg';
 import MoulinDescription from '../components/MoulinDescription';
 import franceMap from '../assets/img/franceMap.png';
+import HomePageCards from '../components/HomepageCards';
 
 const Home = () => 
 {
@@ -18,40 +19,39 @@ const Home = () =>
                 </div>
                 <div class="secondRow row">
                     <div class="column2">
-                    <img class="column2" src={sunsetWater} alt="groupPerforming" />
+                        <img class="column2" src={sunsetWater} alt="groupPerforming" />
                     </div>
-                    <article class="column2  bg-red-800 p-6 flex items-center justify-center just-another-hand-regular w-1/4">
-                    <p className="lg:text-5xl md:text-3xl text-gray-200" >We’re thrilled to have you join our vibrant community of music lovers, performers, and creators.</p>
-                    </article>
+                        <article class="column2  bg-red-800 p-6 flex items-center justify-center just-another-hand-regular w-1/4">
+                            <p className="lg:text-5xl md:text-3xl text-gray-200" >We’re thrilled to have you join our vibrant community of music lovers, performers, and creators.</p>
+                        </article>
                     <div class="column2">
-                    <img className="column2 object-cover"  src={nightLights} alt="nightLights" />
+                        <img className="column2 object-cover"  src={nightLights} alt="nightLights" />
                     </div>
                 </div>  
             </section>
-             <div className='md:hidden  flex justify-center items-center'>
+                <div className='md:hidden  flex justify-center items-center'>
                     <img className='w-full h-100  object-cover' src={grangeDance} alt="grangeDance"/>
                 </div>
-                <div className='ml-26 mt-20 border-b-1'>
-                <h1 className="text-5xl font-bold">Bienvenue au Moulin d’Escapat</h1>
+                <div className='md:ml-26 mt-20 text-center'>
+                    <h1 className="text-5xl font-bold">Bienvenue au Moulin d’Escapat</h1>
                 </div>
-            <section className= "m-20 mt-0 flex flex-col md:flex-row md:items-start md:space-x-8 py-12 px-4 md:px-0 border-dashed border-b-2">
-                
-                <article className="w-3/4 md:w-1/2 flex p-6">
-                    <MoulinDescription></MoulinDescription>
-                </article>
+                <section className= "m-20 mt-0 flex flex-col md:flex-row md:items-start md:space-x-8 py-12 px-4 md:px-0 border-dashed border-b-2">
+                    <article className=" md:w-1/2 flex">
+                        <MoulinDescription></MoulinDescription>
+                    </article>
                 <div className="hidden md:flex md:w-1/3">
-                <div className="flex flex-col">
-                    <img className="flex-row w-full h-full object-cover" src={franceMap} alt="mapOfFrance" />
-                        <h2 className='flex-row text-center'>Le moulin est situé dans le coeur du gers</h2>
-                        <p className="text-center mt-3">Le moulin est situé dans le Gers, entre Toulouse et Bordeaux. 50km d'Auch</p>
+                    <div className="flex flex-col">
+                        <img className="flex-row w-full h-full object-cover" src={franceMap} alt="mapOfFrance" />
+                            <h2 className='flex-row text-center'>Le moulin est situé dans le coeur du gers</h2>
+                            <p className="text-center mt-3">Le moulin est situé dans le Gers, entre Toulouse et Bordeaux. 50km d'Auch</p>
                     </div>
-                </div>
+                    </div>
                 </section>
-                <section className=''>
-                    <div className='homepageCard'></div>
-                    <div className='homepageCard'></div>
-                    <div className='homepageCard'></div>
-                    <div className='homepageCard'></div>
+                <section className='flex flex-col'>
+                    <HomePageCards />
+                    <HomePageCards />
+                    <HomePageCards />
+                    <HomePageCards />
                 </section>
                 
         </>
