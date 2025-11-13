@@ -49,9 +49,6 @@ const Home = () =>
                 </section>
                 <section className='flex flex-col'>
                     <HomePageCards />
-                    <HomePageCards />
-                    <HomePageCards />
-                    <HomePageCards />
                 </section>
                 
         </>
