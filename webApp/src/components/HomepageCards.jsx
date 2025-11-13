@@ -42,8 +42,8 @@ const homepageCards = [
 const HomePageCards = ({ cards = homepageCards }) => {
   return (
     <section className="mb-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="m-20 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="m-10 grid gap-8 grid-cols-2 lg:grid-cols-4">
           {cards.map((card) => (
             <article
               key={card.id}

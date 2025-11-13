@@ -33,7 +33,7 @@ const Header = () => {
     <li class="navbarLink flex flex-col items-center text-center px-4">
       <Link to="/association" class="flex flex-col items-center">
         <img src={assoLogo} alt="assoLogo" class="navbarLogo w-10 h-10 rounded-full mb-1" />
-        <span>Asso</span>
+        <span>Association</span>
       </Link>
     </li>
 
@@ -67,7 +67,7 @@ const Header = () => {
       <li class="navbarLink flex flex-col items-center text-center px-4">
       <Link to="/contact" class="flex flex-col items-center">
         <img src={contactUsLogo} alt="contactLogo" class="navbarLogo w-10 h-10 rounded-full mb-1" />
-        <span>Contact Us</span>
+        <span>Contact</span>
       </Link>
     
     </li>
