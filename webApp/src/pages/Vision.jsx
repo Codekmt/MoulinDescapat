@@ -7,7 +7,6 @@ const Vision = () => {
         <div>
             <ImgWrapper src={visionPhoto} alt="AboutPhoto" title="Vision" />
             <div className="px-4 sm:px-6 lg:px-8 py-12 max-w-7xl mx-auto space-y-16">
-  {/* Section 1: Image Left */}
   <section className="flex flex-col md:flex-row items-center bg-gray-50 p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow duration-300">
     <img
       src={visionPhoto}
@@ -31,7 +30,6 @@ const Vision = () => {
     </div>
   </section>
 
-  {/* Section 2: Image Right */}
   <section className="flex flex-col md:flex-row items-center bg-white p-8 rounded-3xl shadow-sm hover:shadow-lg transition-shadow duration-300">
     <div className="flex-1 md:mr-12 mb-6 md:mb-0">
       <h2 className="text-4xl font-bold mb-4">Our Mission</h2>
