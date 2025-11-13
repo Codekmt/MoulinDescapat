@@ -22,7 +22,7 @@ const Home = () =>
                         <img class="column2" src={sunsetWater} alt="groupPerforming" />
                     </div>
                         <article class="column2  bg-red-800 p-6 flex items-center justify-center just-another-hand-regular w-1/4">
-                            <p className="lg:text-5xl md:text-3xl text-gray-200" >We’re thrilled to have you join our vibrant community of music lovers, performers, and creators.</p>
+                            <p className="text-base sm:text-lg md:text-2xl lg:text-4xl text-gray-200" >We’re thrilled to have you join our vibrant community of music lovers, performers, and creators.</p>
                         </article>
                     <div class="column2">
                         <img className="column2 object-cover"  src={nightLights} alt="nightLights" />
@@ -33,13 +33,13 @@ const Home = () =>
                     <img className='w-full h-100  object-cover' src={grangeDance} alt="grangeDance"/>
                 </div>
                 <div className='md:ml-26 mt-20 text-center'>
-                    <h1 className="text-5xl font-bold">Bienvenue au Moulin d’Escapat</h1>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Bienvenue au Moulin d’Escapat</h1>
                 </div>
                 <section className= "m-20 mt-0 flex flex-col md:flex-row md:items-start md:space-x-8 py-12 px-4 md:px-0 border-dashed border-b-2">
                     <article className=" md:w-1/2 flex">
                         <MoulinDescription></MoulinDescription>
                     </article>
-                <div className="hidden md:flex md:w-1/3">
+                <div className="hidden md:flex md:w-1/3 md:ml-20 lg:ml-50">
                     <div className="flex flex-col">
                         <img className="flex-row w-full h-full object-cover" src={franceMap} alt="mapOfFrance" />
                             <h2 className='flex-row text-center'>Le moulin est situé dans le coeur du gers</h2>
