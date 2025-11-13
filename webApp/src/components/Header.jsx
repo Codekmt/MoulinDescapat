@@ -14,12 +14,12 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-        <header className="bg-red-800 p-3 fixed w-full z-10 border-spacing- border-dashed border-b-1 border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
-          <nav class="flex space-x-2 items-center text-center">
-          <Link to="/" class="navbarLogo"><img src="/logo.png" alt="Logo"/></Link>
+        <header className="bg-red-800 pt-4 fixed w-full z-10 border-spacing- border-dashed border-b border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
+          <nav class="flex space-x-2 ml-5 mb-3">
+          <Link to="/" class="navbarLogo mr-5"><img src="/logo.png" alt="Logo"/></Link>
          <Link to="/"><h1 class="navbarTitle">Moulin d'Escapat</h1></Link>
         </nav>
-        <nav class="hidden min-[900px]:flex">
+        <nav class="hidden min-[940px]:flex">
   <ul class="flex flex-row items-center justify-center">
     <li class="navbarLink flex flex-col items-center text-center px-4">
       <Link to="/about" class="flex flex-col items-center">
@@ -74,16 +74,16 @@ const Header = () => {
   </ul>
 </nav>
 
-            <nav class="flex max-[899px]:flex min-[900px]:hidden items-end gap-1 font-semibold">
+            <nav class="flex max-[939px]:flex min-[940px]:hidden items-end gap-1 font-semibold m-3">
               <button
                 onClick={() => setShowMenu(!showMenu)}
-                class="flex max-[899px]:flex min-[900px]:hidden font-bold text-xl hover:text-gray-500"
+                class="flex max-[939px]:flex min-[940px]:hidden font-bold text-xl hover:text-yellow-200"
               >
                 {showMenu ? <GrClose /> : <GiHamburgerMenu />}
               </button>
               {showMenu && (
           <>
-          <div class="absolute top-12 right-3 bg-red-800 border-spacing- border-dashed border-1 border-yellow just-another-hand-regular text-yellow-500 p-3 rounded-lg">
+          <div class="absolute top-12 right-3 bg-red-800 border-spacing- border-dashed border-yellow just-another-hand-regular text-yellow-500 p-3 rounded-lg">
             <ul class="">
             <li class="hiddenNavbarLink">
               <Link to="/association" onClick={() => setShowMenu(false)}>
