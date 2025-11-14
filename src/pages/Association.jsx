@@ -1,6 +1,6 @@
 import React from "react";
 import ImgWrapper from "../components/ImgWrapper";
-import partyTentGarden from "../assets/img/partyTentGarden.jpg";
+import partyTentGarden from "../assets/img/partytentGarden.jpg";
 import vbProgramma from "../assets/img/vbProgramma.png";
 
 const Association = () => {
