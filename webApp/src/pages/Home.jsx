@@ -7,12 +7,13 @@ import sunsetWater from '../assets/img/sunsetWater.jpg';
 import MoulinDescription from '../components/MoulinDescription';
 import franceMap from '../assets/img/franceMap.png';
 import HomePageCards from '../components/HomepageCards';
+import SeasonalWrapper from '../components/SeasonalWrapper';
 
 const Home = () => 
 {
     return (
         <>
-            <section class="hidden md:flex flex-col">
+            <section class="hidden md:flex flex-col relative z-15">
                 <div class="firstRow row ">
                     <img class="object-fill column"  src={grangeDance} alt="grangeDance"/>
                     <img class="column" src={grangeGarden} alt="gardenMoulin" />
@@ -32,6 +33,7 @@ const Home = () =>
                 <div className='md:hidden  flex justify-center items-center'>
                     <img className='w-full h-100  object-cover' src={grangeDance} alt="grangeDance"/>
                 </div>
+
                 <div className='md:ml-26 mt-20 text-center'>
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Bienvenue au Moulin d’Escapat</h1>
                 </div>
@@ -46,8 +48,10 @@ const Home = () =>
                             <p className="text-center mt-3">Le moulin est situé dans le Gers, entre Toulouse et Bordeaux. 50km d'Auch</p>
                     </div>
                     </div>
-                </section>
-                    <HomePageCards />
+                    </section>
+                <HomePageCards />
+                    
+
         </>
     );
 } 

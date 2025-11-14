@@ -11,7 +11,7 @@ const Vision = () => {
     <img
       src={visionPhoto}
       alt="Vision"
-      className="w-full md:w-80 h-80 object-cover rounded-2xl mb-6 md:mb-0 md:mr-12 transform transition-transform duration-300 hover:scale-105"
+      className="w-full md:w-80 h-80 object-cover rounded-2xl mb-6 md:mb-0 md:mr-12 transform transition-transform duration-300"
     />
     <div className="flex-1">
       <h2 className="text-4xl font-bold mb-4">Our Vision</h2>

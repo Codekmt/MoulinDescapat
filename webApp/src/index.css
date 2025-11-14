@@ -38,18 +38,14 @@ h6 {
   font-style: normal;
 }
 
-body {
-  background-color: rgb(253, 255, 247);
-}
-
 .container {
-  background-color: rgb(253, 255, 247);
   height: 100%;
   min-height: 404px;
   width: 100%;
   margin: 0;
   max-width: 100%;
   padding: 0;
+  padding-bottom: 1px
 }
 
 .navbarTitle {
@@ -124,21 +120,6 @@ footer {
   margin: auto;
 }
 
-.accommodationsCard {
-  padding: 16px;
-  margin: 16px;
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-}
-
-.accommodationsCardsContainer {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-}
-
 ul {
   @apply text-lg mb-4;
   font-family: "Pompiere", "cursive";
@@ -155,6 +136,77 @@ p {
   border-right: 2px solid rgba(234, 179, 8, 0.6);
   margin: 0;
   align-self: flex-end center;
+}
+
+/*Seasonal animations*/
+
+.leaf {
+  position: absolute;
+  top: -10%;
+  width: 75px;
+  height: 75px;
+  background-image: url('./assets/img/leaf.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  animation-name: leaf-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes leaf-fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(120vh) rotate(180deg);
+  }
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  opacity: 0.7;
+  animation: snow-fall linear infinite;
+}
+
+@keyframes snow-fall {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(110vh);
+  }
+}
+.heatwave-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(120deg,
+      rgba(255, 200, 120, 0.15) 0%,
+      rgba(255, 230, 180, 0.15) 50%,
+      rgba(255, 200, 120, 0.15) 100%);
+  background-size: 200% 100%;
+  animation: sun-pass 15s linear infinite;
+}
+
+@keyframes sun-pass {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 0%;
+  }
 }
 
 .textTitle {

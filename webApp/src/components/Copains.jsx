@@ -46,8 +46,8 @@ const Copains = ({cpms=copainsDuMoulin}) => {
     return (
         <section className='m-20 grid gap-6 grid-cols-2 lg:grid-cols-4'>
             {cpms.map((cpm, i) => (
-                <section key ={i}>
-                    <img className='max-h-40 w-50' src={cpm.image} alt={cpm.alt} />
+                <section key ={i} className='lg:p-10 md:p-6 p-4'>
+                    <img className='max-h-40 w-full object-cover' src={cpm.image} alt={cpm.alt} />
                     <h3>{cpm.title}</h3>
                     <h4>{cpm.role}</h4>
                     <p>{cpm.description}</p>

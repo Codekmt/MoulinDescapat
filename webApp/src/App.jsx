@@ -15,12 +15,13 @@ import CopainsDuMoulin from "./pages/Friends";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Association from "./pages/Association";
+import SeasonalWrapper from "./components/SeasonalWrapper";
 
 function App() {
   return (
     <Router>
-        <Header>     
-        </Header>
+        <Header />     
+        <SeasonalWrapper>
         <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,6 +34,7 @@ function App() {
           <Route path="*" element={<h2>404 Not Found</h2>} />
         </Routes>
          </div>
+         </SeasonalWrapper>
         <Footer />
     </Router>
   );

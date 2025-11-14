@@ -14,7 +14,7 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
     return (
         <>
-        <header className="bg-red-800 pt-4 fixed w-full z-10 border-spacing- border-dashed border-b border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between">
+        <header className="bg-red-800 pt-4 w-full border-spacing- border-dashed border-b border-yellow just-another-hand-regular text-yellow-500 flex items-center justify-between fixed z-13">
           <nav class="flex space-x-2 ml-5 mb-3">
           <Link to="/" class="navbarLogo mr-5"><img src="/logo.png" alt="Logo"/></Link>
          <Link to="/"><h1 class="navbarTitle">Moulin d'Escapat</h1></Link>
