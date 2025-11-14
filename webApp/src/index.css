@@ -148,7 +148,7 @@ p {
   background-image: url('./assets/img/leaf.png');
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.2;
+  opacity: 0.4;
   animation-name: leaf-fall;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -156,11 +156,23 @@ p {
 
 @keyframes leaf-fall {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(25vh) translateX(15px) rotate(45deg);
+  }
+
+  50% {
+    transform: translateY(50vh) translateX(-10px) rotate(90deg);
+  }
+
+  75% {
+    transform: translateY(75vh) translateX(10px) rotate(135deg);
   }
 
   100% {
-    transform: translateY(120vh) rotate(180deg);
+    transform: translateY(120vh) translateX(0px) rotate(180deg);
   }
 }
 
@@ -184,6 +196,7 @@ p {
     transform: translateY(110vh);
   }
 }
+
 .heatwave-overlay {
   position: absolute;
   top: 0;
@@ -192,20 +205,90 @@ p {
   height: 100%;
   pointer-events: none;
   background: linear-gradient(120deg,
-      rgba(255, 200, 120, 0.15) 0%,
-      rgba(255, 230, 180, 0.15) 50%,
-      rgba(255, 200, 120, 0.15) 100%);
-  background-size: 200% 100%;
-  animation: sun-pass 15s linear infinite;
+      rgba(255, 200, 120, 0.35) 0%,
+      rgba(255, 230, 180, 0.35) 50%,
+      rgba(255, 200, 120, 0.35) 100%);
+  background-size: 200% 200%;
+  animation: sun-pass 12s linear infinite,
+    sun-wave 3s ease-in-out infinite alternate,
+    sun-color-shift 12s linear infinite,
+    sun-pulse 4s ease-in-out infinite alternate;
+  z-index: 5;
 }
 
 @keyframes sun-pass {
   0% {
-    background-position: 0% 0%;
+    background-position: 0% 50%;
   }
 
   100% {
-    background-position: 100% 0%;
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes sun-wave {
+  0% {
+    transform: skewX(0deg) scaleX(1);
+  }
+
+  25% {
+    transform: skewX(-3deg) scaleX(1.03);
+  }
+
+  50% {
+    transform: skewX(0deg) scaleX(1);
+  }
+
+  75% {
+    transform: skewX(3deg) scaleX(0.97);
+  }
+
+  100% {
+    transform: skewX(0deg) scaleX(1);
+  }
+}
+
+@keyframes sun-color-shift {
+  0% {
+    background: linear-gradient(120deg, rgba(255, 200, 120, 0.35) 0%, rgba(255, 230, 180, 0.35) 50%, rgba(255, 200, 120, 0.35) 100%);
+  }
+
+  25% {
+    background: linear-gradient(120deg, rgba(255, 215, 140, 0.35) 0%, rgba(255, 240, 200, 0.35) 50%, rgba(255, 215, 140, 0.35) 100%);
+  }
+
+  50% {
+    background: linear-gradient(120deg, rgba(255, 230, 160, 0.35) 0%, rgba(255, 245, 220, 0.35) 50%, rgba(255, 230, 160, 0.35) 100%);
+  }
+
+  75% {
+    background: linear-gradient(120deg, rgba(255, 215, 140, 0.35) 0%, rgba(255, 240, 200, 0.35) 50%, rgba(255, 215, 140, 0.35) 100%);
+  }
+
+  100% {
+    background: linear-gradient(120deg, rgba(255, 200, 120, 0.35) 0%, rgba(255, 230, 180, 0.35) 50%, rgba(255, 200, 120, 0.35) 100%);
+  }
+}
+
+@keyframes sun-pulse {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  25% {
+    transform: translateY(-4px) scale(1.02);
+  }
+
+  50% {
+    transform: translateY(0) scale(1);
+  }
+
+  75% {
+    transform: translateY(4px) scale(0.98);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
   }
 }
 

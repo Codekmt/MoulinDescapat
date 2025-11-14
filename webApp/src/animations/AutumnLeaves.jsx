@@ -4,7 +4,7 @@ export default function AutumnLeaves() {
   const leaves = new Array(10).fill(0);
 
   return (
-    <div className="pointer-events-none fixed inset-0 overflow-hidden z-11">
+    <div className="pointer-events-none fixed inset-0 overflow-hidden z-15">
       {leaves.map((_, i) => (
         <span
           key={i}

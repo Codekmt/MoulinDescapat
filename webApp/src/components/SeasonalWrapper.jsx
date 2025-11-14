@@ -9,7 +9,7 @@ function getSeason() {
   if (month === 12 || month === 1 || month === 2) return "winter";
   if (month >= 3 && month <= 5) return "spring";
   if (month >= 6 && month <= 8) return "summer";
-  return "spring";
+  return "winter";
 }
 
 export default function SeasonalWrapper({ children }) {
@@ -19,17 +19,17 @@ export default function SeasonalWrapper({ children }) {
     setSeason(getSeason());
   }, []);
 
-  const bgColors = {
-    autumn: "#FFF7EB",   
-    winter: "#D7E9FF",   
-    spring: "#FFFDF5",  
-    summer: "#FFFBEA",   
+ const bgColors = {
+    autumn: "linear-gradient(to bottom, #FFF7EB, #FFEEDD)", 
+    winter: "linear-gradient(to bottom, #DCEBFF, #F0F8FF)", 
+    spring: "linear-gradient(to bottom, #F5FFF0, #FFFDF5)", 
+    summer: "linear-gradient(to bottom, #FFFBEA, #FFF4CC)", 
   };
 
   return (
     
     <div
-      className="relative w-full h-full"
+      className="relative w-full h-full min-h-screen overflow-hidden"
       style={{ backgroundColor: bgColors[season] }}
     >
       {season === "autumn" && <AutumnLeaves />}

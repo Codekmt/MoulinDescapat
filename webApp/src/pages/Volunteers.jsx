@@ -7,7 +7,7 @@ const Volunteers = () => {
     return (
         <div>
             <ImgWrapper src={grangeGarden} alt="VolunteersPhoto" title="Volunteers" />
-            <section className="py-16 bg-gray-50">
+            <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center md:space-x-12 space-y-8 md:space-y-0">
           

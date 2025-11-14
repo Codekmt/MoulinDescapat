@@ -13,7 +13,7 @@ const Home = () =>
 {
     return (
         <>
-            <section class="hidden md:flex flex-col relative z-15">
+            <section class="hidden md:flex flex-col relative z-25">
                 <div class="firstRow row ">
                     <img class="object-fill column"  src={grangeDance} alt="grangeDance"/>
                     <img class="column" src={grangeGarden} alt="gardenMoulin" />
@@ -34,7 +34,7 @@ const Home = () =>
                     <img className='w-full h-100  object-cover' src={grangeDance} alt="grangeDance"/>
                 </div>
 
-                <div className='md:ml-26 mt-20 text-center'>
+                <div className='md:ml-26 mt-20 text-center z-10'>
                     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Bienvenue au Moulin d’Escapat</h1>
                 </div>
                 <section className= "m-20 mt-0 flex flex-col md:flex-row md:items-start md:space-x-8 py-12 px-4 md:px-0 border-dashed border-b-2">
